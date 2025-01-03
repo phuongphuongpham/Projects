@@ -1,0 +1,166 @@
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	font-family: Times New Roman;
+}
+a{
+	color: black;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.section a:hover {
+	background-color: #ffe6e6; 
+}
+
+h1 a{
+	color: #FF8080;
+}
+
+h1{
+	margin-left: 20px;
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+
+@media all and (min-width: 600px){
+.main{ 
+	margin-right: 20px;
+	text-align: right;
+	font-size: 16px;
+}
+}
+
+@media all and (max-width: 600px){
+h1, .main{
+	text-align: center;
+}
+}
+
+.section{
+	background-color: #ffcccc;
+	height: 30px;
+	text-align: center;
+	font-size: 18px;
+	font-weight:bold;
+	
+	border-radius: 10px;
+	margin: 2px 20px 10px 20px;
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	
+}
+@media all and (min-width: 1200px){
+	.video{
+	margin: 0px 340px 20px 340px;
+}
+	#main img{
+	width: 820px;
+}
+}
+
+@media all and (max-width: 1200px){
+	.video{
+	margin: 0px 20px 20px 20px;
+	}
+	#main img{
+	width: 92%;
+}
+}
+
+#Profiles{
+	text-align: center;
+	);
+}
+#Profiles h2{
+	text-align: center;
+	background-color: rgb(204, 229, 255);
+	border-radius: 10px;
+}
+
+@media all and (min-width: 1200px){
+	#Profiles h2{
+		margin: 20px 340px 20px 340px;
+	}
+	.notification{
+		position: fixed;
+		top: 120;
+		left: 15;
+		width: 350px;
+	}
+	.notification h3{
+		margin-left: 75px;
+	}
+	.socials{
+		position: absolute;
+		top: 120;
+		right: 10;
+		left: 1180;
+		width: 350px;
+	}
+	
+
+	
+}
+@media all and (max-width: 1200px){
+	#Profiles h1{
+		margin: 20px 20px 20px 20px;
+	}
+	.notification{
+		margin: 20px 0px 20px 20px;
+	}
+	.notification h3{
+	margin-left: 20px;
+	}
+.socials p{
+	margin: 20px 0px 20px 45px;
+}
+
+}
+.members img{
+	width: 30%;
+}
+.members{
+	text-align: center;
+}
+.members h2{
+	margin-bottom: 5px;
+	
+}
+.members p{
+	margin-top: 5px;
+	margin-bottom: 25px;
+	font-size: 18px;
+}
+
+.notification h3{
+	text-align: center;
+	background-color: rgb(204, 229, 255);
+	border-radius: 10px;
+	width: 200px;
+}
+.socials h3{
+	width: 200px;
+	text-align: center;
+	margin-left: 40px;
+	background-color: rgb(204, 229, 255);
+	border-radius: 10px;
+}
+.socials a{
+	color: rgb(102, 176, 255);
+}
+
+	
+.sides{
+	position: fixed;
+	bottom: 100;
+	right: 20;
+	width: 30px;
+}

@@ -1,0 +1,240 @@
+html{
+	scroll-behavior: smooth;
+}
+body{
+	font-family: Times New Roman;
+}
+
+a{
+	color: black;
+}
+
+a:link {
+  text-decoration: none;
+
+}
+.section a:hover {
+	background-color: #ffe6e6; 
+}
+h1 a{
+	color: #FF8080;
+}
+h1{
+	margin-left: 20px;
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+@media all and (min-width: 600px){
+.main{ 
+	margin-right: 20px;
+	text-align: right;
+	font-size: 16px;
+}
+}
+
+@media all and (max-width: 600px){
+h1, .main{
+	text-align: center;
+}
+}
+
+
+
+.section{
+	background-color: #ffcccc;
+	height: 30px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	
+	border-radius: 10px;
+	margin: 2px 20px 10px 20px;
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	
+}
+.intro{
+	background-image: url("https://a360b382c67795f00019-4cbb3fa07eca95d1d2c9a802e75e10fe.ssl.cf2.rackcdn.com/Pantone1295.jpg");
+	border-radius: 10px;
+	margin: 20px;
+	margin-top: 10px;
+	text-align:center;
+	padding: 20px;
+}
+.intro p{
+	margin: 5px;
+	font-weight: bold;
+}
+#Name{
+	font-size: 25px;
+}
+
+
+.intro img{
+	border-radius: 50%;
+	width: 200px;
+	margin: 10px;
+}
+ul {
+    list-style-type:none;
+}
+
+.second h2, .third h2{
+	color: rgb(255, 153, 168);
+}
+#myresume{
+	line-height: 1.5;
+}
+@media all and (min-width: 1200px){
+#myresume{
+	margin: 300px;
+	margin-top: 15px;
+	padding: 0px;
+	border: 1px double black;
+	position: relative;
+	
+}
+
+.first{
+	margin: 20px 0px 10px 0px;
+	padding: 0px;
+	height: 100px;
+	background-color: rgb(253, 231, 231);
+	font-size: 45px;
+	text-align:center;
+	
+	display: flex;
+	flex-direction: row;
+	justify-content:space-around;
+	align-items: center;
+}
+
+.second{
+	margin: 20px 540px 20px 20px;
+	padding-right: 40px;
+	padding-left: 20px;
+	background-color: rgb(230, 230, 230);
+	height: 580px;
+	position: absolute;
+	
+}
+.second h2{
+	margin: 20px 10px 0px 40px;
+}
+.third{
+	margin:50px 30px 20px 360px;
+	position: relative;
+}
+p, li{
+	font-size: 18px;
+}
+.skills li{
+	margin-left: -40px;
+}
+.skills{
+	margin: 80px 20px 50px -280px;
+}
+}
+
+@media all and (max-width: 1200px){
+	#myresume{
+	margin: 70px;
+	margin-top: 15px;
+	padding: 0px;
+	border: 1px double black;
+	position: relative;
+}
+
+
+.first{
+	margin: 20px 0px 10px 0px;
+	padding: 0px;
+	height: 100px;
+	background-color: rgb(253, 231, 231);
+	font-size: 45px;
+	text-align:center;
+	
+	display: flex;
+	flex-direction: row;
+	justify-content:space-around;
+	align-items: center;
+}
+.second{
+	margin: 20px 580px 20px 20px;
+	padding-right: 30px;
+	background-color: rgb(230, 230, 230);
+	height: 580px;
+	position: absolute;
+	
+}
+.second h2{
+	margin: 20px 10px 0px 40px;
+}
+.third{
+	margin:50px 30px 20px 340px;
+	position: relative;
+}
+p, li{
+	font-size: 18px;
+}
+.skills li{
+	margin-left: -40px;
+}
+.skills{
+	margin: 100px 20px 50px -280px;
+}
+}
+
+@media all and (max-width: 800px){
+	#myresume{
+	margin: 20px;
+	margin-top: 15px;
+	padding: 0px;
+	border: 1px double black;
+	position: relative;
+}
+	
+
+
+.first{
+	margin: 20px 0px 10px 0px;
+	padding: 0px;
+	height: 100px;
+	background-color: rgb(253, 231, 231);
+	font-size: 45px;
+	text-align:center;
+	
+	display: flex;
+	flex-direction: row;
+	justify-content:space-around;
+	align-items: center;
+}
+.second{
+	margin: 20px 580px 20px 20px;
+	padding-right: 30px;
+	background-color: rgb(230, 230, 230);
+	height: 580px;
+	position: absolute;
+	
+	
+}
+.second h2{
+	margin: 20px 10px 0px 40px;
+}
+.third{
+	margin:50px 30px 20px 340px;
+	position: relative;
+}
+p, li{
+	font-size: 18px;
+}
+.skills li{
+	margin-left: -40px;
+}
+.skills{
+	margin: 100px 20px 50px -280px;
+}
+}

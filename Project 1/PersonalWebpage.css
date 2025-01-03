@@ -1,0 +1,112 @@
+html{
+	scroll-behavior: smooth;
+	
+}
+body{
+	font-family: Times New Roman;
+
+	
+	
+}
+a{
+	color: black;
+}
+
+a:link {
+  text-decoration: none;
+  
+}
+
+.main a:hover {
+	background-color: #ffe6e6;
+}
+h1{
+	color: #FF8080;
+	margin-left: 20px;
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+
+.main{
+	background-color: #ffcccc;
+	height: 30px;
+	text-align: center;
+	font-size: 18px;
+	font-weight:bold;
+	
+	border-radius: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;	
+	
+}
+.home{
+	text-align:center;
+	background-image: url("https://a360b382c67795f00019-4cbb3fa07eca95d1d2c9a802e75e10fe.ssl.cf2.rackcdn.com/Pantone1295.jpg"); 
+	border-radius: 10px;
+	padding: 80px;
+}
+@media all and (min-width: 1200px){
+	.home{
+	margin: 10px 350px 10px 350px;
+	
+}
+	.about{
+	position: absolute;
+	left: 30;
+	top: 100;
+	width: 300px;
+	
+}
+	
+}
+@media all and (max-width: 1200px){
+	.home{
+		margin: 10px 250px 10px 250px;
+	
+}
+	.about{
+	position: absolute;
+	left: 30;
+	top: 100;
+	width: 200px;
+	}
+}
+@media all and (max-width: 1000px){
+	.home{
+	margin: 10px 230px 10px 230px;
+}
+}
+@media all and (max-width: 800px){
+	.home{
+	margin: 10px 20px 10px 20px;
+	
+}
+	.about{
+	position: absolute;
+	margin: 600px 0px 50px 0px;
+	width: 200px;
+	}
+	
+}
+.home h1{
+	color: black;	
+}
+
+.section a:hover{
+	background-color: #ffe6e6;
+}
+.section a{
+	font-size:18px;
+}
+
+.socials{
+	position: fixed;
+	bottom: 100;
+	right: 20;
+	width: 30px;
+}

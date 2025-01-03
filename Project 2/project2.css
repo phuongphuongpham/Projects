@@ -1,0 +1,228 @@
+html{
+	font-family: Monaco;
+	color: white;
+}
+
+@keyframes move-background {
+	from {
+		-webkit-transform: translate3d(0px, 0px, 0px);
+	}
+	to { 
+		-webkit-transform: translate3d(1000px, 0px, 0px);
+	}
+}
+@-webkit-keyframes move-background {
+	from {
+		-webkit-transform: translate3d(0px, 0px, 0px);
+	}
+	to { 
+		-webkit-transform: translate3d(1000px, 0px, 0px);
+	}
+}
+
+@-moz-keyframes move-background {    
+	from {
+		-webkit-transform: translate3d(0px, 0px, 0px);
+	}
+	to { 
+		-webkit-transform: translate3d(1000px, 0px, 0px);
+	}
+}
+
+    @-webkit-keyframes move-background {
+	from {
+		-webkit-transform: translate3d(0px, 0px, 0px);
+	}
+	to { 
+		-webkit-transform: translate3d(1000px, 0px, 0px);
+	}
+}
+
+.background-container{
+	position: fixed;
+	top: 0;
+	left:0;
+	bottom: 0;
+	right: 0;
+	z-index: -1;
+}
+
+.stars {
+	background: black url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: block;
+  	z-index: 0;
+}
+
+.twinkling{
+	width:10000px;
+	height: 100%;
+	background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png") repeat;
+	background-size: 1000px 1000px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+    
+    -moz-animation:move-background 70s linear infinite;
+	-ms-animation:move-background 70s linear infinite;
+	-o-animation:move-background 70s linear infinite;
+	-webkit-animation:move-background 70s linear infinite;
+	animation:move-background 70s linear infinite;
+}
+
+body{
+	z-index: 1;
+	text-align: center;
+	position: center;
+	font-family: Monaco;
+}
+
+button, option, select{
+	font-family: Monaco;
+	font-size: 30px;
+	margin: 20px;
+	height: 45px;
+}
+
+button{
+	font-size: 40px;
+	border-radius: 30px;
+	width: 200px;
+}
+
+#search, #reset{
+	background: linear-gradient(75deg,#e8dd8e,#f5f8cd 3%,#b57d26 97%);
+	margin: -10px;
+	font-size: 35px;
+	margin-bottom: 25px;
+	border: 0px;
+}
+
+#reset{
+	margin-top: 30px;
+}
+
+#search:hover, #reset:hover{
+	background: linear-gradient(75deg,#f5f8cd, #b57d26 3%,#e8dd8e 97%);
+}
+
+h1{
+	color: white;
+	margin-top: 40px;
+	margin-bottom: 10px;
+	
+	letter-spacing: 2px;
+	stroke: white;
+	font-size: 70px;
+	font-weight: 500; 
+	animation: color-change 3s infinite;
+}
+
+@keyframes color-change {
+  0% { color: #FFFFFF;}
+  20% { color: #FFEFBA;}
+  40% { color: #fbd786;}
+  60% { color: #feb47b;}
+  80% { color: #fbd786;}
+  100% { color: #FFEFBA;}
+}
+
+#birthday{
+	font-size: 50px;
+	margin-top: 20px;
+	color: #E5E4E2;
+	-webkit-text-stroke: 0.5px #e8dd8e;
+}
+
+table{
+	margin-left: auto;
+	margin-right: auto;
+	position: center;
+	color: white;
+	border-radius: 10px;
+}
+
+#zodiac_top{
+	margin-left: 150px;
+	margin-right: 150px;
+	position: center;
+	font-size: 30px;
+}
+
+#aries:hover, #taurus:hover, #gemini:hover, #cancer:hover, #leo:hover, #virgo:hover, #libra:hover, #scorpio:hover, #sagitarius:hover, #capricorn:hover, #aquarius:hover, #pisces:hover{
+	text-shadow: 2px 2px 7px #fbd786;
+	transform: scale(1.2);
+}
+
+#aries, #taurus, #gemini, #cancer, #leo, #virgo, #libra, #scorpio{
+	display: inline-block;
+	margin: 25px;
+}
+
+#sagitarius, #capricorn, #aquarius, #pisces{
+	display: inline-block;
+	margin: 25px;
+	margin-left: 10px;
+}
+
+#day_month{
+	display:flex;
+	align-items: baseline;
+	white-space: nowrap;
+	display: flex;
+	justify-content: center;
+	font-size: 30px;
+}
+
+.info{
+	display: none;
+	font-size: 25px;
+	margin: -20px 200px 40px 200px;
+	line-height: 50px;
+	padding: 40px;
+}
+
+#today1, #daily1, #career1, #health1, #love1{
+	color: #e8dd8e;
+	font-weight: bold;
+	margin-bottom: -30px;
+}
+
+#img_zodiac{
+	width: 400px;
+	margin-top: -40px;
+	margin-bottom: -20px;
+}
+
+#my_zodiac{
+	font-size: 40px;
+	margin-top: -30px;
+	font-weight: 2;
+}
+
+#date_range{
+	font-size: 25px;
+	font-weight: 2;
+	margin-top: -30px;
+	margin-bottom: -20px;
+}
+
+#line{
+	margin-top: -30px;
+	margin-bottom: 20px;
+	-webkit-text-stroke: 0.05px #e8dd8e;
+}
+
+#img2{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	margin-top: 30px;
+}
