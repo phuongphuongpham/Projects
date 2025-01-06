@@ -1,5 +1,5 @@
 <style>
-	@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Allison&family=Bonheur+Royale&family=Mrs+Saint+Delafield&family=Parisienne&display=swap');
 </style>
 	
 
@@ -9,19 +9,82 @@
 		<link href="PersonalWebpage.css" type="text/css" rel="stylesheet">
 	</head>
 	<body>
-	<h1> Fern's Blog </h1>
+	<h1 class="title">Fern</h1>
+	<h3 class="title2"> Fern's Blog </h3>
 	
 	<div class="main">
 		
 		<a href="PersonalWebpage.html">home</a>
-		<a href="seventeen.html">seventeen</a>
+		<a href="seventeen.html">interests</a>
 		<a href="resume.html">resume</a>
-		<a href="aboutme.html">about me</a>
+		<a href="aboutme.html">about</a>
 		
 	</div>
 	
+	<div class="calendar">
+		<div>
+		<div class="month" id="month"></div>
+		<ul class="weekdays">
+		  <li>M</li>
+		  <li>T</li>
+		  <li>W</li>
+		  <li>T</li>
+		  <li>F</li>
+		  <li>S</li>
+		  <li>S</li>
+		</ul>
+		<ul class="days" id="days"></ul>
+	</div>
+	</div>
+	
+	  <script>
+		// Function to render the calendar
+		function renderCalendar() {
+		  const today = new Date();
+	
+		  // Get current month and year
+		  const month = today.toLocaleString("default", { month: "long" });
+		  const year = today.getFullYear();
+	
+		  // Get the first day and the last date of the current month
+		  const firstDay = new Date(today.getFullYear(), today.getMonth(), 1).getDay(); // 0-6 (Sun-Sat)
+		  const lastDate = new Date(today.getFullYear(), today.getMonth() + 1, 0).getDate(); // Last day of the month
+	
+		  // Set the month name
+		  document.getElementById("month").textContent = `${month} ${year}`;
+	
+		  // Generate the days
+		  const daysContainer = document.getElementById("days");
+		  daysContainer.innerHTML = ""; // Clear previous content
+	
+		  // Add empty spaces for days before the 1st of the month
+		  const daysInWeek = ["M", "T", "W", "T", "F", "S", "S"];
+		  let emptyDays = firstDay === 0 ? 6 : firstDay - 1; // Adjust for Monday as the first day
+		  for (let i = 0; i < emptyDays; i++) {
+			const emptyCell = document.createElement("li");
+			daysContainer.appendChild(emptyCell);
+		  }
+	
+		  // Add days of the month
+		  for (let date = 1; date <= lastDate; date++) {
+			const dayCell = document.createElement("li");
+			dayCell.textContent = date;
+	
+			// Highlight today
+			if (date === today.getDate()) {
+			  dayCell.classList.add("today");
+			}
+	
+			daysContainer.appendChild(dayCell);
+		  }
+		}
+	
+		// Call the function to render the calendar
+		renderCalendar();
+	  </script>
+
 	<div class="home">
-		<h1>welcome to my blog</h1><br><br>
+		<h1>all about me</h1><br><br>
 	
 	
 		<h2> <a href="seventeen.html">SEVENTEEN's Home</a> </h2>
@@ -55,7 +118,7 @@
 	</div>
 
 	<div class="about">
-	<h3>About</h3>
+	<!-- <h3>About</h3> -->
 	<p> 
 		Hello, this is Fern! <br>
 		Welcome to My Little Space<span class="icons">🪐</span> <br>
