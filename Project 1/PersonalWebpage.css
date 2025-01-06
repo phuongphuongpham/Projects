@@ -98,7 +98,7 @@ h1{
 }
 
 /* Scaling webpage for different screen sizes */
-@media all and (min-width: 800px){
+@media all and (min-width: 1000px){
 	.home{
 		margin: 0px 350px 0px 350px;
 	}
@@ -109,6 +109,7 @@ h1{
 	width: 300px;
 	}
 	.main{
+		padding: 0 250 0 250;
 		align-self: center;
 	}
 	.calendar {
@@ -117,8 +118,8 @@ h1{
 	
 }
 
-/* 
-@media all and (max-width: 1200px){
+ 
+@media all and (max-width: 1000px){
 	.home{
 		margin: -180px 350px 10px 350px;
 	}
@@ -134,6 +135,7 @@ h1{
 		width: 300px;
 	}
 	.main{
+		padding: 0 100 0 100;
 		align-self: center;
 	}
 	.calendar {
@@ -142,7 +144,7 @@ h1{
 	
 	
 }
-@media all and (max-width: 1000px){
+/*@media all and (max-width: 1000px){
 	.home{
 	margin: 0px 0px 10px 0px;
 	}
