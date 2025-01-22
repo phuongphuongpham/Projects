@@ -147,10 +147,10 @@ h1{
 	margin-top: 15px;
 	margin-bottom: 5px;
 }
-/* 
+
 @media all and (min-width: 600px){
 .main{ 
-	
+	/* margin-right: 20px; */
 	text-align: right;
 }
 }
@@ -159,10 +159,20 @@ h1{
 h1, .main{
 	text-align: center;
 }
-} */
+}
 
+@media all and (min-width: 1200px){
+	.video{
+		
+		position: fixed;
+		margin: 280px 0px 20px 1150px;
+	}
+	#main img{
+	width: 820px;
+}
+}
 
-/* @media all and (max-width: 1200px){
+@media all and (max-width: 1200px){
 	.video{
 		text-align: right;
 		margin: 280px 20px 20px 50px;
@@ -170,7 +180,7 @@ h1, .main{
 	#main img{
 		width: 92%;
 	}
-} */
+}
 
 #Profiles{
 	text-align: center;
@@ -185,39 +195,35 @@ h1, .main{
 }
 
 @media all and (min-width: 1200px){
-	.video{
-		position: fixed;
-		margin: 280px 0px 20px 1080px;
-	}
-	.notification{
-		position: fixed;
-		margin: 150px 20px 0px 20px;
-		width: 350px;
-	}
-	.notification h3{
-		padding: 2;
-	}
-	.socials{
-		position: fixed;
-		margin: 150px 0px 0px 120px;
-		width: 350px;
-	}
-	.socials h3{
-		padding: 2;
-	}
-	
-	#main img{
-		width: 820px;
-	}
 	#Profiles h2{
 		margin: 20px 700px 20px 700px;
 	}
-	
+	.notification{
+		position: fixed;
+		top: -20;
+		left: 15;
+		width: 350px;
+	}
+	.notification h3{
+		margin-left: 75px;
+		margin-top: 300;
+		padding: 2;
+	}
+	.socials{
+		/* position: absolute;
+		top: 250;
+		right: 10;
+		left: 1180; */
+		position: fixed;
+		top: 250;
+		right: 15;
+		width: 400px;
+	}
 	
 
 	
 }
-/* @media all and (max-width: 1200px){
+@media all and (max-width: 1200px){
 	#Profiles h2{
 		margin: 20px 100px 20px 100px;
 	}
@@ -227,13 +233,11 @@ h1, .main{
 	.notification h3{
 	margin-left: 20px;
 	}
-	.socials p{
-		margin: 20px 0px 20px 45px;
-	}
+.socials p{
+	margin: 20px 0px 20px 45px;
+}
 
-} */
-
-
+}
 .members img{
 	width: 30%;
 }
