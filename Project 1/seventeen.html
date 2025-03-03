@@ -7,37 +7,38 @@
 		<link href="SEVENTEEN.css" type="text/css" rel="stylesheet">
 	</head>
 	<body>
+
+	<div class="header">
 	<h1 class="title">Fern</h1>
 	<h3 class="title2"> Fern's Blog </h3>
-
+	
 	<div class="main">
 		
 		<a href="PersonalWebpage.html">home</a>
-		<a href="seventeen.html">interests</a>
+		<a href="seventeen.html">seventeen</a>
 		<a href="resume.html">resume</a>
 		<a href="aboutme.html">about</a>
 		
 	</div>
-
-	<h1> <a href="seventeen.html">SEVENTEEN's Home</a> </h1>
-	
+	</div>
+	<div class="subheader">
+		<h1> <a href="seventeen.html">SEVENTEEN</a> </h1>
 	
 		<div class="section">
-			<a href="PersonalWebpage.html">Back Home</a>
-			<a href="seventeen.html #Profiles">Profiles</a> 
-			<a href="seventeen.html #Albums">Albums</a>
-			<a href="seventeen.html #Performances">Performances</a>
+			<a href="#Profiles" onclick="showSection('Profiles')">Profiles</a> 
+			<a href="#Albums" onclick="showSection('Albums')">Albums</a> 
+			<a href="#Performances" onclick="showSection('Performances')">Performances</a>
 		</div>
-		
+	</div>			
 		<div class="video">
-	<iframe width=100% height=470 src="https://www.youtube.com/embed/ANeA74wyT0I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-	</iframe>
+			<iframe width=350 height=250 src="https://www.youtube.com/embed/ANeA74wyT0I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+			</iframe>
 		</div>
 			
-<div id="Profiles">
-	<h2> Profiles</h2>
-		<div id="main"><img  src="https://obs.line-scdn.net/0hHWdMxoJFF3hZNAGD8iBoLxNpERcgVw1wM0wAQixiHVYsWAB4MU4aSjtgFg0gUA9APhNEQT0yEiwMYicpMAUcRwhwGUB2WAJLJTI7fQtMHTQxU1EyZVVbH3UyQEB0AFAmNwJdGH40DEkhUVl8MFBa"/></div>
-</div>		
+	<div id="Profiles" class="content">
+		<h2> Profiles</h2>
+			<div id="full"><img width=400 height=300 src="https://obs.line-scdn.net/0hHWdMxoJFF3hZNAGD8iBoLxNpERcgVw1wM0wAQixiHVYsWAB4MU4aSjtgFg0gUA9APhNEQT0yEiwMYicpMAUcRwhwGUB2WAJLJTI7fQtMHTQxU1EyZVVbH3UyQEB0AFAmNwJdGH40DEkhUVl8MFBa"/></div>
+	
 	
 <div class="members">
 <h2> HipHop Team </h2>
@@ -69,7 +70,19 @@
 		<p><b>DK</b><br>February 18, 1997</p>
 		<img src="https://obs.line-scdn.net/0hpAbb2qeZL25fGzmV9FZQORVGKQEmeDVmNWM4VCpNJUAqdzhuN2EiXD1PLhsmfzdWODx8VHpHGBYVVyFRJHloCjpmdDgUKwlvNBhlCCJnKg5wdC8kY3pjCXMdeFd0LmgwMS1gAXgYNF8nfmFqNnww"/>
 		<p><b>Seungkwan</b><br>January 16, 1998</p>
-</div>		
+</div>	
+</div>
+
+<div id="Albums" class="content">
+	<!-- Content for Albums section -->
+	<p>This is the Albums section.</p>
+  </div>
+  
+  <div id="Performances" class="content">
+	<!-- Content for Performances section -->
+	<p>This is the Performances section.</p>
+  </div>
+
 <div class="notification">
 	<h3> Notifications </h3>
 	<ul>
@@ -86,10 +99,33 @@
 		Weverse: <a href="https://weverse.io/seventeen/feed">https://weverse.io/seventeen/feed</a><br>
 		Youtube: <a href="https://www.youtube.com/user/pledis17">https://www.youtube.com/user/pledis17</a><br>
 		Instagram: <a href="https://www.instagram.com/saythename_17/">https://www.instagram.com/saythename_17/</a>
-		
+	</div>	
 <div class="sides">	
 		<a href="https://twitter.com/pledis_17"><img src="https://img.icons8.com/color/48/000000/twitter--v1.png"/></a>
 		<a href="https://weverse.io/seventeen/feed"><img src="https://img.icons8.com/color/48/000000/weverse.png"/></a>
 		<a href="https://www.youtube.com/user/pledis17"><img src="https://img.icons8.com/color/48/000000/youtube-play.png"/></a>
-		<a href="https://www.instagram.com/saythename_17"/><img src="https://img.icons8.com/fluency/48/000000/instagram-new.png"/></a>
-</div>		
+		<a href="https://www.instagram.com/saythename_17"><img src="https://img.icons8.com/fluency/48/000000/instagram-new.png"/></a>
+</div>	
+
+<script>
+	document.getElementById("Profiles").classList.add("active");
+
+   // Function to toggle between sections
+    function showSection(sectionId) {
+		// Prevent the default anchor behavior
+		event.preventDefault();
+
+		// Hide all sections
+		const sections = document.querySelectorAll('.content');
+		sections.forEach(section => section.classList.remove('active'));
+
+		// Show the selected section
+		const selectedSection = document.getElementById(sectionId);
+		selectedSection.classList.add('active');
+   }
+ </script>	
+</body>
+
+
+
+

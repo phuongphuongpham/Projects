@@ -3,8 +3,28 @@ html{
 }
 
 body{
-	font-family: Times New Roman;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background: linear-gradient(-80deg, #7a98cc,#80b5a0, #a0c5b6,#a7d8c5, #efdfb0, #eed887);
+    background-size: 1000% 100%;
+    animation: gradientFlow 12s ease infinite;
 }
+
+@keyframes gradientFlow {
+    0% { background-position: 0% 50% }
+    50% { background-position: 100% 50% }
+    100% { background-position: 0% 50% }
+}
+
+.content {
+	display: none;  /* Hide all sections by default */
+  }
+  
+.content.active {
+	display: block;  /* Only show the active section */
+  }
+
 .title{
 	font-family: "Allison", serif;
 	text-align: center;
@@ -25,20 +45,6 @@ body{
 	right: 0;
 }
 
-
-a:link {
-  text-decoration: none;
-  
-}
-
-
-h1{
-	color: #FF8080;
-	margin-left: 20px;
-	margin-right: 20px;
-	margin-top: 15px;
-	margin-bottom: 5px;
-}
 .main a{
 	color: black;
 	background-color: rgba(189, 212, 205, 0.2);
@@ -50,26 +56,7 @@ h1{
 	background-color: rgba(85, 137, 123, 0.4);
 	border: 2px solid rgba(248, 245, 245, 0.7);
 }
-/* .main{
-	
-	background-color: #ffcccc;
-	height: 30px;
-	text-align: center;
-	font-size: 18px;
-	font-weight:bold;
-	
-	border-radius: 10px;
-	margin:  0px 20px 0px 20px;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-	align-items: center;	
-	top: -40;
-	padding-left: 50px;	
-	padding-right: 50px;
-	padding: 0 80 0 80;
-	align-self: center;
-} */
+
 .main{
 	
 	/*background-color: #ffcccc;*/
@@ -81,6 +68,7 @@ h1{
 	border-radius: 10px;
 	margin-left: 80px;
 	margin-right: 80px;
+	margin-bottom: -10;
 	
 	position: relative;
 	display: flex;
@@ -94,6 +82,17 @@ h1{
 	align-self: center;  
 }
 
+a:link {
+  text-decoration: none;
+  
+}
+
+
+h1{
+	color: #FF8080;
+	text-align: center;
+}
+
 a{
 	color: black;
 }
@@ -102,16 +101,49 @@ a:link {
   text-decoration: none;
 }
 
-.section a:hover {
-	background-color: #ffe6e6; 
+.subheader {
+	position: fixed;
+	top: 200px;
+	left: 50%;  
+	transform: translate(-50%, -50%);
+    z-index: 10;  
+	
 }
 
+.subheader h1{
+	margin: 10;
+	
+}
+.section{
+	height: 30px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	border-radius: 10px;
+	
+	
+	/* display: flex;
+	flex-direction: column;
+	justify-content: space-around; */
+	
+}
+
+.section a{
+	color: white;
+	width: 300;
+	padding: 5;
+}
+.section a:hover {
+	text-shadow: 0px 0px 10px rgb(59, 99, 88) !important;
+}
+
+
 h1 a{
-	color: #FF8080;
+	color:white;
 }
 
 h1{
-	margin-left: 20px;
+	
 	margin-top: 15px;
 	margin-bottom: 5px;
 }
@@ -129,26 +161,12 @@ h1, .main{
 }
 }
 
-.section{
-	background-color: #ffcccc;
-	height: 30px;
-	text-align: center;
-	font-size: 18px;
-	font-weight:bold;
-	
-	border-radius: 10px;
-	margin: 2px 20px 10px 20px;
-	
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	align-items: center;
-	
-}
 @media all and (min-width: 1200px){
 	.video{
-	margin: 0px 340px 20px 340px;
-}
+		
+		position: fixed;
+		margin: 280px 0px 20px 1150px;
+	}
 	#main img{
 	width: 820px;
 }
@@ -156,50 +174,58 @@ h1, .main{
 
 @media all and (max-width: 1200px){
 	.video{
-	margin: 0px 20px 20px 20px;
+		text-align: right;
+		margin: 280px 20px 20px 50px;
 	}
 	#main img{
-	width: 92%;
-}
+		width: 92%;
+	}
 }
 
 #Profiles{
 	text-align: center;
-	);
+	margin: 120 0 0 0;
 }
 #Profiles h2{
+	font-size: 18;
 	text-align: center;
 	background-color: rgb(204, 229, 255);
 	border-radius: 10px;
+	padding: 2;
 }
 
 @media all and (min-width: 1200px){
 	#Profiles h2{
-		margin: 20px 340px 20px 340px;
+		margin: 20px 700px 20px 700px;
 	}
 	.notification{
 		position: fixed;
-		top: 120;
+		top: -20;
 		left: 15;
 		width: 350px;
 	}
 	.notification h3{
 		margin-left: 75px;
+		margin-top: 300;
+		padding: 2;
 	}
 	.socials{
-		position: absolute;
-		top: 120;
+		/* position: absolute;
+		top: 250;
 		right: 10;
-		left: 1180;
-		width: 350px;
+		left: 1180; */
+		position: fixed;
+		top: 250;
+		right: 15;
+		width: 400px;
 	}
 	
 
 	
 }
 @media all and (max-width: 1200px){
-	#Profiles h1{
-		margin: 20px 20px 20px 20px;
+	#Profiles h2{
+		margin: 20px 100px 20px 100px;
 	}
 	.notification{
 		margin: 20px 0px 20px 20px;

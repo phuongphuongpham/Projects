@@ -107,6 +107,7 @@ h1{
 }
 .home a{
 	color: white;
+	margin: 10;
 }
 .home h1 {
 	font-family: "Parisienne", serif;
@@ -121,7 +122,8 @@ h1{
     50% { text-shadow: 0 0 20px #fffdfe; }
 }
 .section a:hover{
-	background-color: #ffe6e6;
+	text-shadow: 0px 0px 10px rgb(59, 99, 88) !important;
+	/* background-color: #ffe6e6; */
 }
 .section a{
 	font-size:18px;
